@@ -18,11 +18,11 @@
   <distributionManagement>
     <repository>
       <id>nexus-ocp</id>
-      <url>http://nexus-cicd.apps.cluster-walmart-3fb7.walmart-3fb7.example.opentlc.com/repository/maven-releases/</url>
+      <url>${env.NEXUS_REPO}/repository/maven-releases/</url>
     </repository>
     <snapshotRepository>
       <id>nexus-ocp</id>
-      <url>http://nexus-cicd.apps.cluster-walmart-3fb7.walmart-3fb7.example.opentlc.com/repository/maven-snapshots/</url>
+      <url>${env.NEXUS_REPO}/repository/maven-snapshots/</url>
     </snapshotRepository>
   </distributionManagement>
   <dependencies>
